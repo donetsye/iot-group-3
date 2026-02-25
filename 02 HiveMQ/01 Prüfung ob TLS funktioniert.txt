@@ -1,0 +1,39 @@
+**1 MicroPython Version vom ESP prüfen - ob TLS überhaupt funktionieren würde:**
+
+Version MicroPython auf ESP32:
+
+import sys
+print(sys.implementation)
+print(sys.version)
+
+
+(in der Shell-console ausführen)
+-> mit dem Befehl sieht man welche Version von MicroPython auf ESP32 drauf ist z.B. v1.27 oder so
+
+---
+
+prüfen ob TLS drauf ist
+(über Shell-console ausführen)
+
+import ssl
+print(ssl)
+
+
+
+-> -> SSL-Modul ist vorhanden, ESP unterstützt TLS-Verschlüsselung, HiveMQ Cloud (Port 8883) ist rechnisch möglich
+
+(URL/Domain HiveMQ)
+MQTT_BROKER_IP = "b12450ae831942678407c69bd234209f.s1.eu.hivemq.cloud"
+MQTT_PORT = 8883
+
+MQTT_USER = "Gruppe03" # aus HiveMQ Access Management
+MQTT_PASS = "Admin1234"
+
+
+
+
+
+
+
+
+

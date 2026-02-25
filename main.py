@@ -88,9 +88,6 @@ while True:
                         while button.value() == 1:
                             time.sleep(0.02)
                         break # exit the waiting window early
-                    
-                #time.sleep(0.02)
-                #wait_timer += 0.02
 
             if double_click_detected:
                 # double click to switch location
