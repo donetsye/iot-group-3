@@ -14,7 +14,7 @@ import config
 LOCATIONS = ["Tettnang", "Meckenbeuren", "Kressbronn"]
 current_loc_index = 0
 
-button = Pin(17, Pin.IN, Pin.PULL_UP)
+button = Pin(17, Pin.IN, Pin.PULL_DOWN)
 
 oled = OledDisplay()
 sensors = WeatherSensors()  
@@ -63,33 +63,34 @@ print("Initial button state:", button.value())  #debugging
 
 #main loop
 while True:
-    if button.value() == 0: # constantly loops, waiting for the button pin to drop to 0 (which means the button is pressed down, connecting the circuit to Ground)
+    if button.value() == 1: # constantly loops, waiting for the button pin to drop to 0 (which means the button is pressed down, connecting the circuit to Ground)
         time.sleep(0.05) # debounce the first press
         
-        if button.value() == 0: #yes/no check
+        if button.value() == 1: #yes/no check
             # wait for the user to release the first click
-            while button.value() == 0: # holding pattern
+            while button.value() == 1: # holding pattern
                 time.sleep(0.02) 
             
             # start the doubleclick waiting window
             double_click_detected = False
-            wait_timer = 0.0
+            #wait_timer = 0.0
+            start_time = time.ticks_ms() # Record the exact starting millisecond
             
-            while wait_timer < 0.40: #gives 400 milliseconds to press the button a second time
-                if button.value() == 0:
+            while time.ticks_diff(time.ticks_ms(), start_time) < 400: #gives 400 milliseconds to press the button a second time
+                if button.value() == 1:
                     # second press detected, debounce it
                     time.sleep(0.05)
-                    if button.value() == 0:
+                    if button.value() == 1:
                         double_click_detected = True
                         
                         
                         # wait for the user to release second click
-                        while button.value() == 0:
+                        while button.value() == 1:
                             time.sleep(0.02)
                         break # exit the waiting window early
                     
-                time.sleep(0.02)
-                wait_timer += 0.02
+                #time.sleep(0.02)
+                #wait_timer += 0.02
 
             if double_click_detected:
                 # double click to switch location
@@ -107,7 +108,7 @@ while True:
                 # single click to send data to broker
                 loc_number = current_loc_index + 1
                 current_location_name = LOCATIONS[current_loc_index]
-                print(f"\nReading sensors for {current_location_name}...")
+                print(f"\nReading sensors for {current_location_name}")
                 
                 oled.show_sending(loc_number, current_location_name)
                 

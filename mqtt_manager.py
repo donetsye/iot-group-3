@@ -41,11 +41,11 @@ class MQTTManager:
             msg=offline_json,
             retain = True,  # server publishes will message and removes it from the session (if client who cares about it is offline, he will miss it); to avoid it -> send messages as retained (it will be stored on server)
             qos = 1  # at least once
-            ''' qos0 - no delivery guarantee
-                qos1 - at least once, may result in duplicates
-                qos2 - exactly once, highest reliability level
-                higher provides better guarantee but increases network overhead and latency'''
         )
+         #qos0 - no delivery guarantee
+         #qos1 - at least once, may result in duplicates
+         #qos2 - exactly once, highest reliability level
+         #higher provides better guarantee but increases network overhead and latency
         
         self.client.connect()
         
