@@ -10,23 +10,27 @@ class WeatherSensors:
         self.sensor_temp_hum = ahtx0.AHT20(self.i2c)
         self.sea_level_pressure = sea_level_pressure
         
-        # short delay to ensure sensors boot up properly
         time.sleep(0.5)
 
-    def read_all(self):
-        # read and parse pressure & altitude
-        data = self.bme.values[1]  #1 - pressure
+    
+    def read_all(self, current_sea_level=1013.25):  # 1013.25 default value (mean sea value MSL in the ISA)
+        # read and parse pressure and altitude
+        data = self.bme.values[1]  
         pressure = float(data.replace('hPa', ''))
-        altitude = 44330.0 * (1.0 - math.pow(pressure / self.sea_level_pressure, 1 / 5.255))
         
-        # read temperature & humidity
+        # use live api value for the altitude calculation
+        altitude = 44330.0 * (1.0 - math.pow(pressure / current_sea_level, 1 / 5.255))
+        
+        # read temperature and humidity
         temp = self.sensor_temp_hum.temperature
         hum = self.sensor_temp_hum.relative_humidity
         
-        # return data as dictionary
+        # return all data as dictionary
         return {
             "temperature": round(temp, 1),
             "humidity": round(hum, 1),
             "pressure": round(pressure, 2),
             "altitude": round(altitude, 1)
         }
+
+
