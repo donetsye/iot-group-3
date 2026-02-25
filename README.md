@@ -1,4 +1,4 @@
-# 🌤️IoT Weather Station Node - Group 3
+# 🌤️IoT Weather Station - Group 3
 A MicroPython-based IoT sensor node that collects local weather data, synchronizes with the Open-Meteo API for sea-level pressure, and securely publishes the combined dataset to an MQTT broker.
 Designed with a object-oriented structure, this project separates hardware interactions, network management, and user interface logic into highly maintainable modules.
 Key Features
