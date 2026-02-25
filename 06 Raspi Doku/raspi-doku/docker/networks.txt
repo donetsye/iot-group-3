@@ -1,0 +1,5 @@
+NETWORK ID     NAME      DRIVER    SCOPE
+b3b272024527   bridge    bridge    local
+ec1d72cf56d6   host      host      local
+635c18339117   iot-net   bridge    local
+5185cd4b15f9   none      null      local

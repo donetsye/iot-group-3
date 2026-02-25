@@ -1,0 +1,7 @@
+ Static hostname: raspi-iot
+       Icon name: computer
+      Machine ID: 45c494ee25de41a2bbf08330594ebc00
+         Boot ID: 003b6a8043bf4439b58adad4c1f3569a
+Operating System: Debian GNU/Linux 13 (trixie)
+          Kernel: Linux 6.12.62+rpt-rpi-2712
+    Architecture: arm64

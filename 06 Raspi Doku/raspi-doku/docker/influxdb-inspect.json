@@ -1,0 +1,264 @@
+[
+    {
+        "Id": "7b07e7a81b200830b19f89bb85d401b574c5f1cca3cd24365088106c004b8179",
+        "Created": "2026-02-23T14:05:36.749561269Z",
+        "Path": "/entrypoint.sh",
+        "Args": [
+            "influxd"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 2168,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-02-24T14:57:01.522589325Z",
+            "FinishedAt": "2026-02-24T14:56:46.589285815Z"
+        },
+        "Image": "sha256:8e911da5f7b482230e61fe4bad9af0697d97a75e087f19f5f0ddfee62c2bd686",
+        "ResolvConfPath": "/var/lib/docker/containers/7b07e7a81b200830b19f89bb85d401b574c5f1cca3cd24365088106c004b8179/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/7b07e7a81b200830b19f89bb85d401b574c5f1cca3cd24365088106c004b8179/hostname",
+        "HostsPath": "/var/lib/docker/containers/7b07e7a81b200830b19f89bb85d401b574c5f1cca3cd24365088106c004b8179/hosts",
+        "LogPath": "/var/lib/docker/containers/7b07e7a81b200830b19f89bb85d401b574c5f1cca3cd24365088106c004b8179/7b07e7a81b200830b19f89bb85d401b574c5f1cca3cd24365088106c004b8179-json.log",
+        "Name": "/influxdb",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "influxdb-data:/var/lib/influxdb2"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "iot-net",
+            "PortBindings": {
+                "8086/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "8086"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                24,
+                80
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "d4bbf66da0ddf94b5ed7378d83d14988df1e1cb151f2f6a2bd246381716f0648",
+                "Source": "/var/lib/docker/volumes/d4bbf66da0ddf94b5ed7378d83d14988df1e1cb151f2f6a2bd246381716f0648/_data",
+                "Destination": "/etc/influxdb2",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "influxdb-data",
+                "Source": "/var/lib/docker/volumes/influxdb-data/_data",
+                "Destination": "/var/lib/influxdb2",
+                "Driver": "local",
+                "Mode": "z",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "7b07e7a81b20",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "8086/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOSU_VER=1.19",
+                "INFLUXDB_VERSION=2.8.0",
+                "INFLUXDB_PR=-2",
+                "INFLUXDB_PV=2.8.0-2",
+                "INFLUX_CLI_VERSION=2.7.5",
+                "INFLUX_CONFIGS_PATH=/etc/influxdb2/influx-configs",
+                "INFLUXD_INIT_PORT=9999",
+                "INFLUXD_INIT_PING_ATTEMPTS=600",
+                "DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default"
+            ],
+            "Cmd": [
+                "influxd"
+            ],
+            "Image": "influxdb:2",
+            "Volumes": {
+                "/etc/influxdb2": {},
+                "/var/lib/influxdb2": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/entrypoint.sh"
+            ],
+            "Labels": {}
+        },
+        "NetworkSettings": {
+            "SandboxID": "cfdc2971fbd9bc6a4e1ba846ef68d193057972837da612f275c6103dce6bf5bb",
+            "SandboxKey": "/var/run/docker/netns/cfdc2971fbd9",
+            "Ports": {
+                "8086/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "8086"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "8086"
+                    }
+                ]
+            },
+            "Networks": {
+                "iot-net": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "635c183391171df66dce0ea9bbab0ea1f65efe058e3bbf66a521173d1abe0bb1",
+                    "EndpointID": "facc098e6dae8c80e60781bd404eff652811e80c49c23b9e247471e52940c6d3",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.4",
+                    "MacAddress": "9a:ab:a7:55:16:42",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "influxdb",
+                        "7b07e7a81b20"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:1e0970c7a78cb343a3fef58c36489265de5dd8d88439da2ac6a0c756aca67314",
+            "size": 2879,
+            "annotations": {
+                "com.docker.official-images.bashbrew.arch": "arm64v8",
+                "org.opencontainers.image.base.digest": "sha256:1c5d4fd0caad88eb6cb62bcdbc2f580ef2523ab69e86abc2bd2a94703aac9f96",
+                "org.opencontainers.image.base.name": "debian:bookworm-slim",
+                "org.opencontainers.image.created": "2026-02-03T02:49:08Z",
+                "org.opencontainers.image.revision": "a501127168426f260dd1b2a6281f0be8a9a605bd",
+                "org.opencontainers.image.source": "https://github.com/influxdata/influxdata-docker.git#a501127168426f260dd1b2a6281f0be8a9a605bd:influxdb/2.8",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/influxdb",
+                "org.opencontainers.image.version": "2"
+            },
+            "platform": {
+                "architecture": "arm64",
+                "os": "linux",
+                "variant": "v8"
+            }
+        }
+    }
+]

@@ -1,0 +1,4 @@
+Added user rules (see 'ufw status' for running firewall):
+ufw allow 22/tcp
+ufw allow 1880/tcp
+ufw allow 3000/tcp

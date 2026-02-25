@@ -107,9 +107,8 @@ while True:
                 current_location_name = LOCATIONS[current_loc_index]
                 print(f"\nReading sensors for {current_location_name}")
                 
-                oled.show_sending(loc_number, current_location_name)
-                
                 try:
+                    oled.show_sending(loc_number, current_location_name)
                     live_sea_level = api_weather.fetch_current(current_location_name)
                     sensor_data = sensors.read_all(current_sea_level=live_sea_level)
                     

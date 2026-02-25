@@ -1,0 +1,5 @@
+IMAGE                        ID             DISK USAGE   CONTENT SIZE   EXTRA
+grafana/grafana-oss:latest   9e1e77ade304        932MB          193MB   U    
+hello-world:latest           ef54e839ef54       22.5kB         10.2kB   U    
+influxdb:2                   8e911da5f7b4        397MB          107MB   U    
+nodered/node-red:latest      7dfe40efdd7b        877MB          201MB   U    

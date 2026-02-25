@@ -1,0 +1,23 @@
+● ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/usr/lib/systemd/system/ssh.service; enabled; preset: enabled)
+     Active: active (running) since Tue 2026-02-24 15:56:53 CET; 20h ago
+ Invocation: 61adf1b523c04e71b9dd4ea425feeece
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+    Process: 1308 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+   Main PID: 1323 (sshd)
+      Tasks: 1 (limit: 9575)
+        CPU: 350ms
+     CGroup: /system.slice/ssh.service
+             └─1323 "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups"
+
+Feb 24 15:56:53 raspi-iot sshd[1323]: Server listening on 0.0.0.0 port 22.
+Feb 24 15:56:53 raspi-iot sshd[1323]: Server listening on :: port 22.
+Feb 24 15:56:53 raspi-iot systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Feb 25 07:45:09 raspi-iot sshd-session[2976]: Accepted password for pi from 10.15.153.61 port 57374 ssh2
+Feb 25 07:45:09 raspi-iot sshd-session[2976]: pam_unix(sshd:session): session opened for user pi(uid=1000) by pi(uid=0)
+Feb 25 10:11:58 raspi-iot sshd-session[10850]: Accepted password for pi from 10.15.153.61 port 46988 ssh2
+Feb 25 10:11:58 raspi-iot sshd-session[10850]: pam_unix(sshd:session): session opened for user pi(uid=1000) by pi(uid=0)
+Feb 25 10:11:58 raspi-iot sshd-session[10850]: pam_unix(sshd:session): session closed for user pi
+Feb 25 11:23:50 raspi-iot sshd-session[14623]: Accepted password for pi from 10.15.153.61 port 49734 ssh2
+Feb 25 11:23:50 raspi-iot sshd-session[14623]: pam_unix(sshd:session): session opened for user pi(uid=1000) by pi(uid=0)

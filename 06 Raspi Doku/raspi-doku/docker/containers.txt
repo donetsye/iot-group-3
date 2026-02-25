@@ -1,0 +1,6 @@
+CONTAINER ID   IMAGE                 COMMAND                  CREATED          STATUS                      PORTS                                         NAMES
+5e12c83e82e2   hello-world           "/hello"                 53 minutes ago   Exited (0) 52 minutes ago                                                 friendly_noether
+78e7ea280bf9   grafana/grafana-oss   "/run.sh"                46 hours ago     Up 21 hours                 0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp   grafana
+7b07e7a81b20   influxdb:2            "/entrypoint.sh infl…"   46 hours ago     Up 21 hours                 0.0.0.0:8086->8086/tcp, [::]:8086->8086/tcp   influxdb
+0f88bb0359ef   nodered/node-red      "./entrypoint.sh"        46 hours ago     Up 21 hours (healthy)       0.0.0.0:1880->1880/tcp, [::]:1880->1880/tcp   nodered
+d42229a5f12b   hello-world           "/hello"                 46 hours ago     Exited (0) 46 hours ago                                                   competent_thompson

@@ -1,0 +1,63 @@
+[
+    {
+        "Name": "iot-net",
+        "Id": "635c183391171df66dce0ea9bbab0ea1f65efe058e3bbf66a521173d1abe0bb1",
+        "Created": "2026-02-23T14:39:22.231463576+01:00",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv4": true,
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "172.18.0.0/16",
+                    "Gateway": "172.18.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Options": {},
+        "Labels": {},
+        "Containers": {
+            "0f88bb0359ef1f2f320c73bdf853118c9a195f41fa4c901fa6bb2895a0a3d7e8": {
+                "Name": "nodered",
+                "EndpointID": "bfb0a1864b7369587d87bcc2705c49edbae2366261dd81144f68b40cf53d8af7",
+                "MacAddress": "de:6c:c0:a9:46:5b",
+                "IPv4Address": "172.18.0.2/16",
+                "IPv6Address": ""
+            },
+            "78e7ea280bf99bfc10dc1c6126c9fccce499d4510e7c0cc470b75e0ef82099f8": {
+                "Name": "grafana",
+                "EndpointID": "a95763f5214137443fcc7e42fb813e29b5d5e6b5a4a1cd6e927ba77d4c6e6f23",
+                "MacAddress": "d6:90:9e:1d:66:9c",
+                "IPv4Address": "172.18.0.3/16",
+                "IPv6Address": ""
+            },
+            "7b07e7a81b200830b19f89bb85d401b574c5f1cca3cd24365088106c004b8179": {
+                "Name": "influxdb",
+                "EndpointID": "facc098e6dae8c80e60781bd404eff652811e80c49c23b9e247471e52940c6d3",
+                "MacAddress": "9a:ab:a7:55:16:42",
+                "IPv4Address": "172.18.0.4/16",
+                "IPv6Address": ""
+            }
+        },
+        "Status": {
+            "IPAM": {
+                "Subnets": {
+                    "172.18.0.0/16": {
+                        "IPsInUse": 6,
+                        "DynamicIPsAvailable": 65530
+                    }
+                }
+            }
+        }
+    }
+]

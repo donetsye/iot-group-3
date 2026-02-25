@@ -1,0 +1,237 @@
+[
+    {
+        "Id": "78e7ea280bf99bfc10dc1c6126c9fccce499d4510e7c0cc470b75e0ef82099f8",
+        "Created": "2026-02-23T14:10:15.386588351Z",
+        "Path": "/run.sh",
+        "Args": [],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 2167,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-02-24T14:57:01.559848121Z",
+            "FinishedAt": "2026-02-24T14:56:46.59997474Z"
+        },
+        "Image": "sha256:9e1e77ade304069aee3196e9a4f210830e96e80ce9a2640891eccc324b152faf",
+        "ResolvConfPath": "/var/lib/docker/containers/78e7ea280bf99bfc10dc1c6126c9fccce499d4510e7c0cc470b75e0ef82099f8/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/78e7ea280bf99bfc10dc1c6126c9fccce499d4510e7c0cc470b75e0ef82099f8/hostname",
+        "HostsPath": "/var/lib/docker/containers/78e7ea280bf99bfc10dc1c6126c9fccce499d4510e7c0cc470b75e0ef82099f8/hosts",
+        "LogPath": "/var/lib/docker/containers/78e7ea280bf99bfc10dc1c6126c9fccce499d4510e7c0cc470b75e0ef82099f8/78e7ea280bf99bfc10dc1c6126c9fccce499d4510e7c0cc470b75e0ef82099f8-json.log",
+        "Name": "/grafana",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "grafana-data:/var/lib/grafana"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "iot-net",
+            "PortBindings": {
+                "3000/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "3000"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                24,
+                80
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "grafana-data",
+                "Source": "/var/lib/docker/volumes/grafana-data/_data",
+                "Destination": "/var/lib/grafana",
+                "Driver": "local",
+                "Mode": "z",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "78e7ea280bf9",
+            "Domainname": "",
+            "User": "472",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "3000/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "TZ=Europe/Berlin",
+                "PATH=/usr/share/grafana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GF_PATHS_CONFIG=/etc/grafana/grafana.ini",
+                "GF_PATHS_DATA=/var/lib/grafana",
+                "GF_PATHS_HOME=/usr/share/grafana",
+                "GF_PATHS_LOGS=/var/log/grafana",
+                "GF_PATHS_PLUGINS=/var/lib/grafana/plugins",
+                "GF_PATHS_PROVISIONING=/etc/grafana/provisioning"
+            ],
+            "Cmd": null,
+            "Image": "grafana/grafana-oss",
+            "Volumes": null,
+            "WorkingDir": "/usr/share/grafana",
+            "Entrypoint": [
+                "/run.sh"
+            ],
+            "Labels": {
+                "maintainer": "Grafana Labs <hello@grafana.com>",
+                "org.opencontainers.image.source": "https://github.com/grafana/grafana"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "7899508acf448507c0d586dd87e2fcb347c1dbc1c0bc4d5ed89384b68d625b94",
+            "SandboxKey": "/var/run/docker/netns/7899508acf44",
+            "Ports": {
+                "3000/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "3000"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "3000"
+                    }
+                ]
+            },
+            "Networks": {
+                "iot-net": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "635c183391171df66dce0ea9bbab0ea1f65efe058e3bbf66a521173d1abe0bb1",
+                    "EndpointID": "a95763f5214137443fcc7e42fb813e29b5d5e6b5a4a1cd6e927ba77d4c6e6f23",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.3",
+                    "MacAddress": "d6:90:9e:1d:66:9c",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "grafana",
+                        "78e7ea280bf9"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:0be615b1d4717a76bfc846b7ee2f84fed8200d56a75b77049d1a1cbf380cd136",
+            "size": 2412,
+            "platform": {
+                "architecture": "arm64",
+                "os": "linux"
+            }
+        }
+    }
+]

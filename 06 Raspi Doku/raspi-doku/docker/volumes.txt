@@ -1,0 +1,5 @@
+DRIVER    VOLUME NAME
+local     d4bbf66da0ddf94b5ed7378d83d14988df1e1cb151f2f6a2bd246381716f0648
+local     grafana-data
+local     influxdb-data
+local     node_red_data

@@ -1,0 +1,11 @@
+[
+    {
+        "CreatedAt": "2026-02-23T14:43:33+01:00",
+        "Driver": "local",
+        "Labels": null,
+        "Mountpoint": "/var/lib/docker/volumes/node_red_data/_data",
+        "Name": "node_red_data",
+        "Options": null,
+        "Scope": "local"
+    }
+]

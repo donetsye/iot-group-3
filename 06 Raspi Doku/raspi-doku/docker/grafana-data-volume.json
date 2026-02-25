@@ -1,0 +1,11 @@
+[
+    {
+        "CreatedAt": "2026-02-23T15:08:14+01:00",
+        "Driver": "local",
+        "Labels": null,
+        "Mountpoint": "/var/lib/docker/volumes/grafana-data/_data",
+        "Name": "grafana-data",
+        "Options": null,
+        "Scope": "local"
+    }
+]

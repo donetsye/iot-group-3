@@ -1,0 +1,19 @@
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                
+udp   UNCONN 0      0            0.0.0.0:111        0.0.0.0:*                                                                          
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*                                                                          
+udp   UNCONN 0      0            0.0.0.0:51437      0.0.0.0:*                                                                          
+udp   UNCONN 0      0                  *:111              *:*                                                                          
+udp   UNCONN 0      0                  *:37941            *:*                                                                          
+udp   UNCONN 0      0                  *:5353             *:*                                                                          
+tcp   LISTEN 0      4096         0.0.0.0:111        0.0.0.0:*           ino:2686 sk:1 cgroup:/system.slice/rpcbind.socket <->          
+tcp   LISTEN 0      128          0.0.0.0:22         0.0.0.0:*           ino:11317 sk:2 cgroup:/system.slice/ssh.service <->            
+tcp   LISTEN 0      4096         0.0.0.0:1880       0.0.0.0:*           ino:15705 sk:3 cgroup:/system.slice/docker.service <->         
+tcp   LISTEN 0      4096       127.0.0.1:631        0.0.0.0:*           ino:23263 sk:4 cgroup:/system.slice/cups.service <->           
+tcp   LISTEN 0      4096         0.0.0.0:3000       0.0.0.0:*           ino:12891 sk:5 cgroup:/system.slice/docker.service <->         
+tcp   LISTEN 0      4096         0.0.0.0:8086       0.0.0.0:*           ino:15764 sk:6 cgroup:/system.slice/docker.service <->         
+tcp   LISTEN 0      4096            [::]:111           [::]:*           ino:163 sk:7 cgroup:/system.slice/rpcbind.socket v6only:1 <->  
+tcp   LISTEN 0      128             [::]:22            [::]:*           ino:11319 sk:8 cgroup:/system.slice/ssh.service v6only:1 <->   
+tcp   LISTEN 0      4096            [::]:1880          [::]:*           ino:15706 sk:9 cgroup:/system.slice/docker.service v6only:1 <->
+tcp   LISTEN 0      4096           [::1]:631           [::]:*           ino:23262 sk:a cgroup:/system.slice/cups.service v6only:1 <->  
+tcp   LISTEN 0      4096            [::]:3000          [::]:*           ino:12892 sk:b cgroup:/system.slice/docker.service v6only:1 <->
+tcp   LISTEN 0      4096            [::]:8086          [::]:*           ino:15765 sk:c cgroup:/system.slice/docker.service v6only:1 <->
