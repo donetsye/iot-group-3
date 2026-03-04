@@ -1,0 +1,49 @@
+
+OpenAI - ChatGPT
+Zugriff: 15.02.2026, 12:30 Uhr
+
+Prompt 1:
+Linux Systeminformationen (hostnamectl, os-realese, installierte Pakete, etc.) als einzelne Dateien speichern.
+
+
+Prompt 2:
+Linux laufende System Services sowie SSH Status & Konfig nach Datei x sichern.
+
+
+Prompt 3:
+Docker Container, Images, Netzwerke und Volumes in Datei xx speichern.
+
+
+Prompt 4:
+Docker inspect und Volume der Docker aufm Raspi als JSON speichern.
+
+Prompt 5:
+How do I calculate an altitude in MicroPython using pressure and sea level pressure?
+
+Prompt 6:
+What are the recommended strategies for implementing button debouncing in MicroPython?
+
+Prompt 7:
+I am looking for an open-access, keyless REST API to retrieve current mean sea level pressure  based on latitude and longitude. The solution must support MicroPython. Please include the specific endpoint URL and the JSON path to the pressure variable.
+
+Prompt 8:
+in the context of the MicroPython network module, please provide an explanation of the STA_IF interface constant. how does it differ from AP_IF??
+
+Prompt 9:
+how do I correctly normalise the MicroPython time.time() output to the unix epoch January 1, 1970, for an ESP32? pls give me the necessary constant offset.
+
+Prompt 10:
+how do I properly initialize an MQTT client object in MicroPython using the umqtt.simple library? please provide a technical breakdown of the required and optional parameters and explain how to configure them for a secure persistent connection to a message broker
+
+Prompt 11:
+should Wi-Fi connection logic be placed in boot.py or main.py in MicroPython? pls compare both options for reliability and ease of debugging
+
+Prompt 12:
+could you explain the technical purpose of pull-up and pull-down resistors in digital logic? How do they prevent floating input states on a microcontroller's gpio pins, and what are the difference between using internal software-configured resistors vs external hardware components???
+
+Prompt 13:
+how can I programmatically identify I2C addresses of peripheral devices connected to a microcontroller? please provide a MicroPython script to scan the I2C bus and report all active device addresses.
+
+
+
+
